@@ -14,6 +14,8 @@ package collections;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
 
 public class StudentDatabase {
   public static void main(String[] args) throws IOException {
@@ -41,14 +43,20 @@ public class StudentDatabase {
     List<String>, где String - серализованный студент вида "имя;рейтинг"
     сериализуем (склеиваем строку) для сортировки, разъединяем для вывода
     для сортировки по рейтингу придётся дополнять слева нулями:
-    "23" < "9", но "23" > "09"
+    сравнение строк "23" < "9", но "23" > "09"
 
     хотелось бы:
     List<Student> - не понятно, как сортировать
 
-
-
      */
+    List<Student> students = new ArrayList<>();
+    for (int i = 0; i < n; ++i) {
+      students.add(Student.readStudent());
+    }
+
+    for (Student student : students) {
+      System.out.println(student);
+    }
   }
 
 
