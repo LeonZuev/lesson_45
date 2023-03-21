@@ -12,6 +12,10 @@ public class Objects {
   "Человек", "Утка", "Пингвин" и "Самолёт".
    */
   public static void main(String[] args) {
-    System.out.println("Hello world!");
+    Superman clarkKent = new Superman();
+    clarkKent.fly();
+    clarkKent.run();
+    clarkKent.swim();
+
   }
 }
