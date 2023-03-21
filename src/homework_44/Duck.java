@@ -12,7 +12,7 @@ public class Duck implements CanFly, CanRun, CanSwim {
   }
 
   @Override
-  public void swim() {
-    System.out.println("Утка умеет плавать, как супермен");
+  public void swim(String place) {
+    System.out.println("Утка умеет плавать, как супермен" + place);
   }
 }

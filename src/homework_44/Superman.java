@@ -20,7 +20,7 @@ public class Superman implements CanFly, CanRun, CanSwim {
   }
 
   @Override
-  public void swim() {
-    System.out.println("умеет плавать");
+  public void swim(String place) {
+    System.out.println("умеет плавать" + place);
   }
 }
