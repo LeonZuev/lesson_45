@@ -27,7 +27,20 @@ public class Main {
     Set<Integer> numberSet = new HashSet<>();
     numberSet.addAll(numbers); //любую коллекцию через AddAll можно "расширить" любой коллекцией
     // в том числе Map.keySet() и Map.values()
+
     Map<String, String> phonebook = new HashMap<>();
+    phonebook.put("A", "+123");
+    phonebook.put("е", "+234");
+    phonebook.put("B", "+345");
+
+    List<String> sortedNames = new ArrayList<>(phonebook.keySet());
+    Collections.sort(sortedNames);
+    for(String name : phonebook.keySet()) {
+      System.out.println(name + ": " + phonebook.get(name));
+    }
+    String word1 = "mama";
+    String word2 = "mia";
+   System.out.println(word1.compareTo(word2));
 
     /*
     Integer[] numbersArray = numbers.toArray(new Integer[0]); // можно коллекцию превратить в массив
