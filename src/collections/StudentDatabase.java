@@ -15,6 +15,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class StudentDatabase {
@@ -53,7 +54,7 @@ public class StudentDatabase {
     for (int i = 0; i < n; ++i) {
       students.add(Student.readStudent());
     }
-
+    Collections.sort(students);
     for (Student student : students) {
       System.out.println(student);
     }
