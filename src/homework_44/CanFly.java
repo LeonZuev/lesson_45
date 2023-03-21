@@ -4,6 +4,6 @@ package homework_44;
  */
 
 public interface CanFly {
-  void fly();
+  void fly(); //паблик можно не писать
 
 }
