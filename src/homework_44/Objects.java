@@ -15,7 +15,7 @@ public class Objects {
     Superman clarkKent = new Superman();
     clarkKent.fly();
     clarkKent.run();
-    clarkKent.swim();
+    clarkKent.swim(" in swimming pol");
 
   }
 }
